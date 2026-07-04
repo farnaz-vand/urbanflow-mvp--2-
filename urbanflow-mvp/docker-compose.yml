@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    container_name: urbanflow-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: urbanflow
+      POSTGRES_USER: urbanflow
+      POSTGRES_PASSWORD: urbanflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - urbanflow_pgdata:/var/lib/postgresql/data
+
+volumes:
+  urbanflow_pgdata:

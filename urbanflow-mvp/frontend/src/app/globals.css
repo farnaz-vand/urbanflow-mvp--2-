@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08111f;
+  --foreground: #e8f2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(38,157,255,0.16), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(12,64,160,0.2), transparent 25%),
+    linear-gradient(180deg, #07101c 0%, #0b1728 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.dashboard-card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-soft;
+}
+
+.grid-bg {
+  background-size: 28px 28px;
+}
