@@ -1,5 +1,5 @@
+C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\config\CorsConfig.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\config\HttpClientConfig.java
-C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\config\WebConfig.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\controller\AnalysisController.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\controller\AnalyticsController.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\controller\FeedbackController.java
@@ -14,12 +14,15 @@ C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\dto\FeedbackResponseDto.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\dto\openai\OpenAiChatRequest.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\dto\openai\OpenAiChatResponse.java
+C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\dto\OpenAiRequest.java
+C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\dto\OpenAiResponse.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\entity\AnalysisScenario.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\entity\DecisionFeedback.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\entity\FeedbackConfidence.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\entity\UserDecision.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\repository\AnalysisScenarioRepository.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\repository\DecisionFeedbackRepository.java
+C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\service\AiAnalysisService.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\service\AnalysisService.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\service\AnalyticsService.java
 C:\Users\PC\Downloads\urbanflow-mvp (2)\urbanflow-mvp\backend\src\main\java\com\urbanflow\service\FeedbackService.java

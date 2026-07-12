@@ -14,9 +14,12 @@ import java.util.Locale;
 public class AnalysisService {
 
     private final AnalysisScenarioRepository scenarioRepository;
+    private final AiAnalysisService aiAnalysisService;
 
-    public AnalysisService(AnalysisScenarioRepository scenarioRepository) {
+    public AnalysisService(AnalysisScenarioRepository scenarioRepository,
+     AiAnalysisService aiAnalysisService) {
         this.scenarioRepository = scenarioRepository;
+        this.aiAnalysisService = aiAnalysisService;
     }
 
     public AnalysisResponse analyzeAndSave(AnalysisRequest request) {
@@ -77,6 +80,8 @@ public class AnalysisService {
         scenario.setDescriptionSignals(descriptionSignals);
         scenario.setFinalScore(finalScore);
 
+         String expertReport = aiAnalysisService.generateExpertReport(scenario);
+  scenario.setAiExplanationText(expertReport);
         AnalysisScenario savedScenario = scenarioRepository.save(scenario);
 
         return toResponse(savedScenario);
@@ -99,7 +104,8 @@ public class AnalysisService {
                 scenario.getLng(),
                 scenario.getProjectType(),
                 scenario.getDescription(),
-                scenario.getCreatedAt()
+                scenario.getCreatedAt(),
+                scenario.getAiExplanationText()
         );
     }
 

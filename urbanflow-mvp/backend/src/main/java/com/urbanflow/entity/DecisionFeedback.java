@@ -32,13 +32,9 @@ public class DecisionFeedback {
     private LocalDateTime createdAt;
 
     private Double roadDensity;
-
     private Double buildingDensity;
-
     private Double accessibilityScore;
-
     private Double floodRisk;
-
     private String projectType;
 
     @Column(columnDefinition = "TEXT")
@@ -64,6 +60,18 @@ public class DecisionFeedback {
 
     public void setScenario(AnalysisScenario scenario) {
         this.scenario = scenario;
+    }
+
+    // متدهای کمکی برای کار راحت‌تر با scenarioId در کنترلر
+    public Long getScenarioId() {
+        return this.scenario != null ? this.scenario.getId() : null;
+    }
+
+    public void setScenarioId(Long scenarioId) {
+        if (this.scenario == null) {
+            this.scenario = new AnalysisScenario();
+        }
+        this.scenario.setId(scenarioId);
     }
 
     public UserDecision getUserDecision() {
@@ -102,59 +110,24 @@ public class DecisionFeedback {
         return createdAt;
     }
 
-    public Double getRoadDensity() {
-        return roadDensity;
-    }
+    public Double getRoadDensity() { return roadDensity; }
+    public void setRoadDensity(Double roadDensity) { this.roadDensity = roadDensity; }
 
-    public void setRoadDensity(Double roadDensity) {
-        this.roadDensity = roadDensity;
-    }
+    public Double getBuildingDensity() { return buildingDensity; }
+    public void setBuildingDensity(Double buildingDensity) { this.buildingDensity = buildingDensity; }
 
-    public Double getBuildingDensity() {
-        return buildingDensity;
-    }
+    public Double getAccessibilityScore() { return accessibilityScore; }
+    public void setAccessibilityScore(Double accessibilityScore) { this.accessibilityScore = accessibilityScore; }
 
-    public void setBuildingDensity(Double buildingDensity) {
-        this.buildingDensity = buildingDensity;
-    }
+    public Double getFloodRisk() { return floodRisk; }
+    public void setFloodRisk(Double floodRisk) { this.floodRisk = floodRisk; }
 
-    public Double getAccessibilityScore() {
-        return accessibilityScore;
-    }
+    public String getProjectType() { return projectType; }
+    public void setProjectType(String projectType) { this.projectType = projectType; }
 
-    public void setAccessibilityScore(Double accessibilityScore) {
-        this.accessibilityScore = accessibilityScore;
-    }
+    public String getDescriptionSignals() { return descriptionSignals; }
+    public void setDescriptionSignals(String descriptionSignals) { this.descriptionSignals = descriptionSignals; }
 
-    public Double getFloodRisk() {
-        return floodRisk;
-    }
-
-    public void setFloodRisk(Double floodRisk) {
-        this.floodRisk = floodRisk;
-    }
-
-    public String getProjectType() {
-        return projectType;
-    }
-
-    public void setProjectType(String projectType) {
-        this.projectType = projectType;
-    }
-
-    public String getDescriptionSignals() {
-        return descriptionSignals;
-    }
-
-    public void setDescriptionSignals(String descriptionSignals) {
-        this.descriptionSignals = descriptionSignals;
-    }
-
-    public Double getFinalScore() {
-        return finalScore;
-    }
-
-    public void setFinalScore(Double finalScore) {
-        this.finalScore = finalScore;
-    }
+    public Double getFinalScore() { return finalScore; }
+    public void setFinalScore(Double finalScore) { this.finalScore = finalScore; }
 }

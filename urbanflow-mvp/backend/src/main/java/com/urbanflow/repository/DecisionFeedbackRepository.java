@@ -7,7 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DecisionFeedbackRepository extends JpaRepository<DecisionFeedback, Long> {
-
-    // شمارش تعداد فیدبک‌ها بر اساس تصمیم کاربر (AGREE / DISAGREE)
+    
+    // این متد توسط Spring Data JPA به صورت خودکار پیاده‌سازی می‌شود
     long countByUserDecision(UserDecision userDecision);
+    
 }

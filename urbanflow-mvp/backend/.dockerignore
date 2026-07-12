@@ -1,0 +1,7 @@
+target/
+.mvn/
+*.log
+.idea/
+*.iml
+urbanflowdb.mv.db
+urbanflowdb.trace.db

@@ -14,19 +14,13 @@ public class AnalysisResponse {
     private String projectType;
     private String description;
     private LocalDateTime createdAt;
-    private AiExplanation aiExplanation;
+    private String aiExplanationText;
+
     public AnalysisResponse() {}
 
-    public AiExplanation getAiExplanation() {
-        return aiExplanation;
-    }
-
-    public void setAiExplanation(AiExplanation aiExplanation) {
-        this.aiExplanation = aiExplanation;
-    }
 
     public AnalysisResponse(Long id, Integer score, String risk, List<String> insights, String recommendation,
-                            Double lat, Double lng, String projectType, String description, LocalDateTime createdAt) {
+                            Double lat, Double lng, String projectType, String description, LocalDateTime createdAt, String aiExplanationText ) {
         this.id = id;
         this.score = score;
         this.risk = risk;
@@ -37,6 +31,7 @@ public class AnalysisResponse {
         this.projectType = projectType;
         this.description = description;
         this.createdAt = createdAt;
+        this.aiExplanationText = aiExplanationText; 
     }
 
     public Long getId() {
@@ -118,4 +113,8 @@ public class AnalysisResponse {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
+
+     public String getAiExplanationText() { return aiExplanationText; }
+    public void setAiExplanationText(String aiExplanationText) { this.aiExplanationText = aiExplanationText; }
+
 }
