@@ -10,8 +10,7 @@ AI-powered urban investment decision MVP.
 
 ---
 
-## Features
-
+## Featu
 - Landing page with product intro
 - Map-centric analysis flow
 - Click map to select a location
